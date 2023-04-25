@@ -1,9 +1,11 @@
-function sayMyName(name: string): void {
-  if (name === 'Heisenberg') {
-    console.log("You're right 👍");
-  } else {
-    console.log("You're wrong 👎");
-  }
-}
+import {
+  generateAnimalName,
+  generateRandomName,
+  generateStarWarsName,
+} from './nameGenerator/generate-random-name';
 
-sayMyName('Heisenberg');
+export const nameGenerator = {
+  randomName: generateRandomName,
+  animalName: generateAnimalName,
+  starWarsName: generateStarWarsName,
+};
