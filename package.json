@@ -8,6 +8,9 @@
   "bugs": {
     "url": "hhttps://github.com/MAD-Goat-Project/mad-name-generator/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/MAD-Goat-Project"
+  },
   "author": "Luís Ventuzelos <luisventuzelos@gmail.com>",
   "license": "MIT",
   "dependencies": {
