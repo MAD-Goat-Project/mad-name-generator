@@ -1,9 +1,13 @@
 {
-  "name": "mad-name-generator",
+  "name": "@MAD-Goat-Project/mad-name-generator",
   "version": "1.0.0",
   "description": "A package for name generation",
   "main": "src/main.ts",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
+  "homepage": "https://github.com/MAD-Goat-Project/mad-name-generator",
+  "bugs": {
+    "url": "hhttps://github.com/MAD-Goat-Project/mad-name-generator/issues"
+  },
   "author": "Luís Ventuzelos <luisventuzelos@gmail.com>",
   "license": "MIT",
   "dependencies": {
