@@ -8,4 +8,5 @@ on:
 jobs:
   build-and-push-image:
     uses: MAD-Goat-Project/github-actions-workflows/.github/workflows/yarn-publish-pkg.yml@main
-    secrets: inherit
+    secrets:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
