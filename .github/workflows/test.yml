@@ -1,0 +1,6 @@
+name: Test
+on: [ push, pull_request ]
+
+jobs:
+  test:
+    uses: MAD-Goat-Project/github-actions-workflows/.github/workflows/test-node.yml@main
