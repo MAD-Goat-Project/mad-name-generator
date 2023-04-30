@@ -12,7 +12,7 @@
 /tools/internal-rules/node_modules/**
 test.js
 !.eslintrc.js
-/dist/**
+/lib/**
 Dockerfile
 docker-compose.yml
 /.github/**

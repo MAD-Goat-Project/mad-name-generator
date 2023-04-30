@@ -2,8 +2,8 @@
   "name": "@MAD-Goat-Project/mad-name-generator",
   "version": "1.0.3",
   "description": "A package for name generation",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/generate-random-name.js",
+  "types": "lib/generate-random-name.d.ts",
   "type": "module",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
   "homepage": "https://github.com/MAD-Goat-Project/mad-name-generator",
@@ -29,8 +29,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "start": "node lib/generate-random-name.js",
+    "dev": "nodemon src/generate-random-name.ts",
     "lint:fix": "eslint --fix . && prettier --write .",
     "lint:check": "eslint . && prettier --check . --ignore-path .eslintignore",
     "test": "jest"
