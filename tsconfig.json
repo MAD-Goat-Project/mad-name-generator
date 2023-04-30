@@ -5,9 +5,7 @@
     "module": "es2020",
     "outDir": "lib"
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "exclude": [
     "node_modules",
     "src/**/*.test.ts",

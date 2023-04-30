@@ -31,7 +31,7 @@
     "build": "tsc",
     "start": "node lib/generate-random-name.js",
     "dev": "nodemon src/generate-random-name.ts",
-    "lint:fix": "eslint --fix . && prettier --write .",
+    "lint:fix": "eslint --fix . && prettier --write . --ignore-path .eslintignore",
     "lint:check": "eslint . && prettier --check . --ignore-path .eslintignore",
     "test": "jest"
   },
