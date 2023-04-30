@@ -1,6 +1,6 @@
 {
   "name": "@MAD-Goat-Project/mad-name-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A package for name generation",
   "main": "lib/generate-random-name.js",
   "types": "lib/generate-random-name.d.ts",
