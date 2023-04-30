@@ -1,8 +1,10 @@
 {
   "name": "@MAD-Goat-Project/mad-name-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package for name generation",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
   "homepage": "https://github.com/MAD-Goat-Project/mad-name-generator",
   "bugs": {
