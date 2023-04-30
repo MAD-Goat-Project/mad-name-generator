@@ -2,12 +2,18 @@
   "name": "@MAD-Goat-Project/mad-name-generator",
   "version": "1.0.1",
   "description": "A package for name generation",
-  "main": "src/main.ts",
+  "main": "src/index.ts",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
   "homepage": "https://github.com/MAD-Goat-Project/mad-name-generator",
   "bugs": {
     "url": "hhttps://github.com/MAD-Goat-Project/mad-name-generator/issues"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -21,8 +27,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/main.js",
-    "dev": "nodemon src/main.ts",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
     "lint:fix": "eslint --fix . && prettier --write .",
     "lint:check": "eslint . && prettier --check . --ignore-path .eslintignore",
     "test": "jest"
