@@ -1,6 +1,6 @@
 {
   "name": "@MAD-Goat-Project/mad-name-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for name generation",
   "main": "src/main.ts",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
