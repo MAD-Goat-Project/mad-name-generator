@@ -10,14 +10,21 @@ import {
 const DEFAULT_NAME_LENGTH = 1;
 
 /**
- * Generate a random name
- * @param nameLength - The length of the random generated number to be returned. Cannot be bigger than 5.
- * @returns The generated name
+ * Generate a random name based on the given factor.
+ * The dictionary used is a combination of Star Wars, animals, colors, countries and languages.
+ * Factor 1 will generate a name with 2 words based on the Star Wars dictionary.
+ * Factor 2  is Star Wars + animals.
+ * Factor 3 is Star Wars + animals + colors.
+ * Factor 4 is Star Wars + animals + colors + countries.
+ * Factor 5 is Star Wars + animals + colors + countries + languages.
+ * @param factor - The length factor for the random name generator library. Cannot be bigger than 5.
+ * @returns The random generated name.
  */
-export function generateRandomName(nameLength: string): string {
+export function generateRandomName(factor: string): string {
   // This is a security vulnerability, using eval is not recommended.
   // The usage of eval is only for demonstration purposes.
-  const length: number = eval(nameLength) || DEFAULT_NAME_LENGTH;
+  // See https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/eval#never_use_eval! for more information.
+  const length: number = eval(factor) || DEFAULT_NAME_LENGTH;
 
   if (length > 5) {
     throw new Error('Name length cannot be bigger than 5');
@@ -26,6 +33,7 @@ export function generateRandomName(nameLength: string): string {
   return uniqueNamesGenerator({
     dictionaries: [starWars, animals, colors, countries, languages],
     length,
+    separator: ' ',
   });
 }
 
