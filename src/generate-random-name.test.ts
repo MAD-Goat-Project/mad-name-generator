@@ -10,6 +10,10 @@ describe('Generate name function tests', () => {
     expect(generateRandomName('1')).toBeTruthy();
   });
 
+  test('Empty name length returns a name with default length', () => {
+    expect(generateRandomName('')).toBeTruthy();
+  });
+
   test('Can generate a new random animal name', () => {
     expect(generateAnimalName()).toBeTruthy();
   });

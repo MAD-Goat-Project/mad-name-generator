@@ -24,6 +24,7 @@
     "@types/express": "^4.17.17",
     "@types/node": "^18.16.0",
     "eslint": "^8.39.0",
+    "lodash": "^4.17.21",
     "unique-names-generator": "^4.7.1"
   },
   "scripts": {
@@ -38,6 +39,7 @@
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-typescript": "^7.21.4",
     "@tsconfig/node16": "^1.0.3",
+    "@types/lodash": "^4.14.194",
     "jest": "^29.5.0",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",

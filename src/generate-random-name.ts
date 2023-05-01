@@ -6,6 +6,9 @@ import {
   starWars,
   uniqueNamesGenerator,
 } from 'unique-names-generator';
+import _ from 'lodash';
+
+const DEFAULT_NAME_LENGTH = 1;
 
 /**
  * Generate a random name
@@ -15,7 +18,10 @@ import {
 export function generateRandomName(nameLength: string): string {
   // This is a security vulnerability, using eval is not recommended.
   // The usage of eval is only for demonstration purposes.
-  const length: number = eval(nameLength) || 1;
+  const length: number = !_.isEmpty(nameLength)
+    ? eval(nameLength) || DEFAULT_NAME_LENGTH
+    : DEFAULT_NAME_LENGTH;
+
   if (length > 5) {
     throw new Error('Name length cannot be bigger than 5');
   }
