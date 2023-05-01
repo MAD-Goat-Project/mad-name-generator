@@ -4,7 +4,6 @@
   "description": "A package for name generation",
   "main": "lib/generate-random-name.js",
   "types": "lib/generate-random-name.d.ts",
-  "type": "module",
   "repository": "https://github.com/MAD-Goat-Project/mad-name-generator.git",
   "homepage": "https://github.com/MAD-Goat-Project/mad-name-generator",
   "bugs": {
