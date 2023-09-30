@@ -1,3 +1,5 @@
+name: Security Scans
+
 on:
   push:
     branches:
